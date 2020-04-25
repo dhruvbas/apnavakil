@@ -67,7 +67,7 @@
           <a href="mailto:name@email.com">advocate.gaurav.thukral@gmail.com</a>
         </div>
         <p class="lead mb-5">Gaurav is a registered member of the Bar Council of Delhi & Delhi High Court Bar Association. Gaurav is actively engaged in research projects related to Alternate Dispute Resolution. In addition, he is also actively involved in Advisory & Consulting, Drafting & Reviewing Agreements, Due Diligence and Non-litigation Support. 
-			He strives to provide a transparent environment for clients and believes in perfection, creativity & result-oriented approach in order to achieve the best results within a stipulated time.
+			He strives to provide a transparent environment for clients and believes in integrity, perfection, creativity & result-oriented approach in order to achieve the best results within a stipulated time.
 		</p>
 		<p class="lead mb-5">Gaurav is deeply involved in research on ADR practices and mediation techniques. He has varied experience in corporate in dealing with resources for issue resolution, policy conflicts and employee grievance handling.
 		A member of ICA (INDIAN COUNCIL OF ARBITRATION) as an arbitrator with more than 15 years’ experience of corporate, HR Workforce Management & IT. 
@@ -93,7 +93,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="mission">
       <div class="w-100">
-        <h2 class="mb-5">Mission Statement</h2>
+        <h2 class="mb-5">Mission</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
@@ -107,7 +107,7 @@
 				</br></br>
 				It could be civil, criminal or anything that can be resolved through law or mediation, conciliation or Arbitration.
 				</br></br>
-				We are just not another law firm, we believe in getting you a resolution, justice and peace.
+				<i><b>We are just not another law firm, we believe in getting you a resolution, justice and peace.</b></i>
 			</p>
 			<p><b>Fedei Defensor</b> is the law firm through which the legal services are processed. </br>
                The term “Fedei Defensor” is a latin term meaning Defender of faith
