@@ -234,7 +234,7 @@
       </div>
     </section>
 	    <hr class="m-0">
-
+  <!-- Added Disclaimer -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="disclaimer">
       <div class="w-100">
 	  <h2 class="mb-5">Disclaimer</h2>
