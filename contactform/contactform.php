@@ -11,7 +11,7 @@
   $contact_email_to = "advocate.gaurav.thukral@gmail.com";
 
   // Title prefixes
-  $subject_title = "Contat Form Message:";
+  $subject_title = "Apna Vakil Message:";
   $name_title = "Name:";
   $email_title = "Email:";
   $message_title = "Message:";
