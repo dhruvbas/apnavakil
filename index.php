@@ -1,3 +1,20 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "dhruv.bas@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+   
+    $message = $name. " wrote the following:" . "\n\n" . $_POST['message'];
+
+    
+    $headers = "From:" . $from;
+    mail($to,$subject,$message,$header);
+    
+    //header('Location: Contact.html'); 
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +36,10 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
+  
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
   <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
 
 </head>
 
@@ -66,7 +86,7 @@
 		<div class = "row">
 			<div class = "col-3">
 				<span class="d-lg-block">
-					<img class="img-fluid img-profile" src="img/Advocate.jpg" alt="" style = "height:100px; width:100px;">
+					<img class="img-fluid img-profile" src="img/Advocate.jpg" alt="" style = "max-height:100px; max-width:112px;">
 				</span>
 			</div>
 			<div class = "col-9">
@@ -106,7 +126,7 @@
 	  	<div class = "row">
 			<div class = "col-3">
 				<span class="d-lg-block">
-					<img class="img-fluid img-profile" src="img/lawlady.png" alt="" style = "height:100px; width:100px;">
+					<img class="img-fluid img-profile" src="img/lawlady.png" alt="" style = "max-height:100px; max-width:120px;">
 				</span>
 			</div>
 		    <div class = "col-9">
@@ -236,7 +256,7 @@
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
-      <div class="w-100">
+      <!-- <div class="w-100">
         <h2 class="mb-5">Contact Us</h2>
         <ul class="fa-ul mb-0">
           <li>
@@ -247,7 +267,68 @@
             +91-7838-33-99-44</li>
           <li>
 
-      </div>
+      </div> -->
+	  <div class="w-100">
+		<h2 class="mb-5">Contact Us</h2>
+        <div class="row">
+			
+			<div class = "span8">
+            
+				<?php if(isset($_POST['submit'])){?>
+					<div id="sendmessage">We have received your message. Thank you!</div>
+					<div id="errormessage"></div>
+				<?php } else { ?>
+				<form action="" method="post" role="form" class="contactForm">
+					<div class="row">
+						<div class="span4 form-group field">
+							<input type="text" name="name" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+							<div class="validation"></div>
+						</div>
+
+						<div class="span4 form-group">
+							<input type="email" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+							<div class="validation"></div>
+						</div>
+						
+						
+						<div class="span8 form-group">
+							<input type="text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+							<div class="validation"></div>
+						</div>
+						
+						
+						<div class="span8 form-group">
+							<textarea name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+							placeholder="Message"></textarea>
+							<div class="validation"></div>
+							<div class="text-center">
+								<button class="btn btn-theme btn-medium margintop10" type="submit">Send a message</button>
+							</div>
+						</div>
+					</div>
+				  
+				</form>
+			<?php }?>
+			</div>
+			  <div class="span4">
+				<div class="clearfix"></div>
+				<aside class="right-sidebar">
+
+				  <div class="widget">
+					<div class="subheading mb-3">Contact information</div>
+
+					<ul class="fa-ul mb-0">
+					  
+						<li><i class="fa-li fa fa-envelope"></i> advocate.gaurav.thukral@gmail.com</li>
+						<li><i class="fa-li fa fa-mobile-alt"></i>+91-7838-33-99-44</li>
+			  
+					</ul>
+
+				  </div>
+				</aside>
+			  </div>
+        </div>
+	  </div>
     </section>
 	    <hr class="m-0">
 
@@ -285,6 +366,8 @@
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 </body>
 
 </html>
