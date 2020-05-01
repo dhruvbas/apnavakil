@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
 		<div class = "row">
 			<div class = "col-3">
 				<span class="d-lg-block">
-					<img class="img-fluid img-profile" src="img/Advocate.jpg" alt="" style = "max-height:100px; max-width:112px;">
+					<img class="img-fluid img-profile" src="img/Advocate.jpg" alt="" style = "height:100px; width:112px;">
 				</span>
 			</div>
 			<div class = "col-9">
@@ -126,7 +126,7 @@ if(isset($_POST['submit'])){
 	  	<div class = "row">
 			<div class = "col-3">
 				<span class="d-lg-block">
-					<img class="img-fluid img-profile" src="img/lawlady.png" alt="" style = "max-height:100px; max-width:120px;">
+					<img class="img-fluid img-profile" src="img/lawlady.png" alt="" style = "height:100px; width:120px;">
 				</span>
 			</div>
 		    <div class = "col-9">
